@@ -4,6 +4,8 @@ project('lua',
   license: 'MIT',
   default_options : ['c_std=c99'])
 
+lua_inc = include_directories('include')
+
 subdir('src')
 subdir('tests')
 
