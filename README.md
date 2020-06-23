@@ -1,5 +1,5 @@
 # A Re-structured Fork of Lua
-![license-badge] ![c-badge] ![meson-badge]
+![build-status-badge] ![license-badge] ![c-badge] ![meson-badge]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -27,3 +27,4 @@
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [meson-badge]: https://img.shields.io/badge/Meson-0.54.0-blueviolet.svg?style=flat-square
 [c-badge]: https://img.shields.io/badge/C-99-blue.svg?style=flat-square
+[build-status-badge]: https://github.com/thiago-rezende/lua/workflows/CI/badge.svg
