@@ -1,0 +1,18 @@
+project('lua',
+  ['c'],
+  version : '5.4.0',
+  license: 'MIT',
+  default_options : ['c_std=c99'])
+
+subdir('src')
+subdir('tests')
+
+summary({'bindir': get_option('bindir'),
+         'libdir': get_option('libdir'),
+         'datadir': get_option('datadir'),
+        }, section: 'Directories')
+
+summary({'Library Type': get_option('library_type'),
+         'Build Interpreter': get_option('build_interpreter').enabled(),
+         'Build Tests': get_option('build_tests').enabled()
+        }, section: 'Configuration')
