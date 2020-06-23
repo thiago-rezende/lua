@@ -46,11 +46,13 @@ lua_src = [
 
 if get_option('library_type') == 'static'
     liblua = static_library('liblua',
+        dependencies: [m_dep],
         sources: [luacore_src, liblua_src, luaaux_src],
         include_directories: lua_inc,
         install: true)
 else
     liblua = shared_library('liblua',
+        dependencies: [m_dep],
         sources: [luacore_src, liblua_src, luaaux_src],
         include_directories: lua_inc,
         install: true)
@@ -61,7 +63,7 @@ liblua_dep = declare_dependency(link_with : liblua,
 
 if get_option('build_interpreter').enabled()
     lua = executable('lua',
-        dependencies: liblua_dep,
+        dependencies: [liblua_dep, m_dep],
         sources: [lua_src, luacore_src],
         include_directories: lua_inc,
         install: true)
