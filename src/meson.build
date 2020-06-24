@@ -82,14 +82,14 @@ lua_flags = [
 ]
 
 if get_option('library_type') == 'static'
-    liblua = static_library('liblua',
+    liblua = static_library('lua',
         c_args: [lua_warns, lua_flags],
         dependencies: [m_dep],
         sources: [luacore_src, liblua_src, luaaux_src],
         include_directories: lua_inc,
         install: true)
 else
-    liblua = shared_library('liblua',
+    liblua = shared_library('lua',
         c_args: [lua_warns, lua_flags],
         dependencies: [m_dep],
         sources: [luacore_src, liblua_src, luaaux_src],
