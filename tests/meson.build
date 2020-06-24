@@ -1,5 +1,6 @@
 tests_src = {
-    'simple': ['src/simple.c']
+    'simple': ['src/simple.c'],
+    'do_file': ['src/do_file.c']
 }
 
 tests_inc = include_directories(['include'])
