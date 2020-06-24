@@ -24,7 +24,7 @@
 <!-- Links -->
 
 <!-- Badges -->
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-badge]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
 [meson-badge]: https://img.shields.io/badge/Meson-0.54.0-blueviolet.svg?style=flat-square
 [c-badge]: https://img.shields.io/badge/C-99-blue.svg?style=flat-square
 [build-status-badge]: https://github.com/thiago-rezende/lua/workflows/CI/badge.svg
