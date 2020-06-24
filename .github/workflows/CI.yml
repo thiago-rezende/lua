@@ -19,7 +19,7 @@ jobs:
 
     - name: Meson Build [static]
       run: |
-        meson build -Dc_std=c99 -Dlibrary_type=static
+        meson build --reconfigure -Dc_std=c99 -Dlibrary_type=static
 
     - name: Compile [static]
       run: |
@@ -31,7 +31,7 @@ jobs:
 
     - name: Meson Build [shared]
       run: |
-        meson build -Dc_std=c99 -Dlibrary_type=shared
+        meson build --reconfigure -Dc_std=c99 -Dlibrary_type=shared
 
     - name: Compile [shared]
       run: |
