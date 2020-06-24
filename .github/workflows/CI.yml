@@ -19,7 +19,7 @@ jobs:
 
     - name: Meson Build [static]
       run: |
-        meson build --reconfigure -Dc_std=c99 -Dlibrary_type=static
+        meson build -Dc_std=c99 -Dlibrary_type=static
 
     - name: Compile [static]
       run: |
