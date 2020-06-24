@@ -17,14 +17,26 @@ jobs:
         sudo pip3 install setuptools
         sudo pip3 install meson
 
-    - name: Meson Build
+    - name: Meson Build [static]
       run: |
-        meson build -Dc_std=c99
+        meson build -Dc_std=c99 -Dlibrary_type=static
 
-    - name: Compile
+    - name: Compile [static]
       run: |
         ninja -C build
 
-    - name: Run Tests
+    - name: Run Tests [static]
+      run: |
+        ninja test -C build
+
+    - name: Meson Build [shared]
+      run: |
+        meson build -Dc_std=c99 -Dlibrary_type=shared
+
+    - name: Compile [shared]
+      run: |
+        ninja -C build
+
+    - name: Run Tests [shared]
       run: |
         ninja test -C build
