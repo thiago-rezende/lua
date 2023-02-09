@@ -1,6 +1,6 @@
 project('lua',
   ['c'],
-  version : '5.4.4',
+  version : '5.4.5',
   license: 'MIT',
   default_options : ['c_std=c99'])
 
